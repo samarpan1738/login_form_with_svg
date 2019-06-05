@@ -368,6 +368,7 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
   form {
 
     max-width: 310px;
+    max-height: 600px;
   }
 }
 
