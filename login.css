@@ -288,50 +288,62 @@ form .inputGroup2 #showPasswordToggle .indicator:after {
   visibility: hidden;
 }
 
-form .inputGroup2 #showPasswordToggle input:checked ~ .indicator:after {
+form .inputGroup2 #showPasswordToggle input:checked~.indicator:after {
   visibility: visible;
 }
 
-form .inputGroup2 #showPasswordToggle input:focus ~ .indicator,
-form .inputGroup2 #showPasswordToggle input:hover ~ .indicator {
+form .inputGroup2 #showPasswordToggle input:focus~.indicator,
+form .inputGroup2 #showPasswordToggle input:hover~.indicator {
   border-color: #386e77;
 }
 
-form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator {
+form .inputGroup2 #showPasswordToggle input:disabled~.indicator {
   opacity: 0.5;
 }
 
-form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator:after {
+form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
   visibility: hidden;
 }
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 1079px) and (min-width:411px) {
   form {
     transform: scale(0.9);
-    top: 0;
-    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width:768px) {
+  form {
+    transform: scale(0.9);
+    width: 50vh;
+    height: 90vw;
+  }
+}
+
+@media screen and (max-width: 1224px) and (min-width:1080px) {
+  form {
+    transform: scale(2);
+
   }
 }
 
 /* Desktops and laptops ----------- */
-/*
-@media screen and (max-width : 1225px) {
+
+@media screen and (min-width : 1225px) {
   form {
 
     max-width: 422px;
     max-height: 800px;
   }
-}*/
+}
 
-/*
-@media screen and (max-width : 321px) {
+
+@media screen and (max-width : 410px) and (min-width:320px) {
   form {
     transform: scale(0.85);
     top: 0;
     bottom: 0;
-    background-color: #d43f8d;
   }
 
   .svgContainer {
@@ -342,4 +354,4 @@ form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator:after {
     transform: scale(0.95);
   }
 
-}*/
+}
