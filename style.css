@@ -299,7 +299,7 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 }
 
 
-@media only screen and (max-width : 375px) {
+@media only screen and (min-width : 375px) {
   #loginEmail {
     font-size: 1.4rem;
   }
