@@ -68,6 +68,7 @@ body {
   background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
 }
 
+
 form {
   position: absolute;
   align-self: center;
@@ -357,18 +358,18 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 
 /* NEW */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   form {
 
     transform: scale(0.9);
   }
 }
 
-@media screen and (max-width: 480px) and (min-width:321px) {
+/*Most of the smartphones*/
+@media screen and (max-width: 479px) and (min-width:320px) {
   form {
-
     max-width: 310px;
-    max-height: 600px;
+    max-height: 95vh;
   }
 }
 
