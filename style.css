@@ -354,6 +354,10 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
     transform: scale(0.85);
 
   }
+
+  body {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width : 411px) {
