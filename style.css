@@ -304,9 +304,39 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
   visibility: hidden;
 }
 
+/* Desktops and laptops ----------- */
+@media screen and (max-width : 1225px) {
+  form {
+
+    max-width: 422px;
+    max-height: 800px;
+    background-color: antiquewhite;
+  }
+}
 
 
-@media screen and (min-width : 320px) {
+
+
+
+
+@media screen and (max-width:1081px) {
+
+  form {
+    background-color: aqua;
+    transform: scale(1.9);
+  }
+}
+
+@media screen and (max-width : 412px) {
+  form {
+    transform: translateY(0px);
+    max-height: 800px;
+    max-width: 370px;
+    background-color: #a51717;
+  }
+}
+
+@media screen and (max-width : 321px) {
   form {
     transform: scale(0.85);
     top: 0;
@@ -322,31 +352,4 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
     transform: scale(0.95);
   }
 
-}
-
-
-@media screen and (min-width : 411px) {
-  form {
-    max-height: 800px;
-    max-width: 370px;
-    background-color: #386e77;
-  }
-}
-
-@media screen and (min-width:1080px) {
-
-  form {
-    background-color: aqua;
-    top: 25%;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media screen and (min-width : 1224px) {
-  form {
-    top: 10%;
-    max-width: 422px;
-    max-height: 800px;
-    background-color: antiquewhite;
-  }
 }
