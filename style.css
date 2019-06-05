@@ -396,7 +396,11 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
   /* Styles */
+  form {
+    max-width: 200px;
+  }
 }
 
 /* iPads (landscape) ----------- */
