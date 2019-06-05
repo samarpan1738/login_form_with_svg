@@ -370,6 +370,14 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
   form {
     max-width: 310px;
     max-height: 95vh;
+
+    background-color: #d43f8d;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .inputGroup {
+    transform: scaleY(0.8);
   }
 }
 
