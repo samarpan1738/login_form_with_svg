@@ -306,7 +306,7 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 }
 
 /*MEDIA QUERIES*/
-
+/*
 @media screen and (max-width: 1079px) and (min-width:411px) {
   form {
     transform: scale(0.9);
@@ -327,8 +327,6 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 
   }
 }
-
-/* Desktops and laptops ----------- */
 
 @media screen and (min-width : 1225px) {
   form {
@@ -354,4 +352,37 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
     transform: scale(0.95);
   }
 
+}*/
+
+
+/* NEW */
+
+@media screen and (max-width: 320px) {
+  form {
+
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width:321px) {
+  form {
+
+    max-width: 310px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width:480px) {
+  form {
+
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width:960px) {
+  form {
+
+    transform: scale(2);
+    max-width: 422px;
+    max-height: 800px;
+  }
 }
