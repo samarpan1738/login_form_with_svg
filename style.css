@@ -352,7 +352,6 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
 @media screen and (max-width : 320px) {
   form {
     transform: scale(0.85);
-    background-color: #d43f8d;
     top: 0;
     bottom: 0;
   }
