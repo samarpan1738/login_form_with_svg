@@ -372,18 +372,19 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
     max-height: 800px;
     max-width: 370px;
   }
+}
 
-  @media screen and (max-width:1080px) {
+@media screen and (max-width:1080px) {
 
-    form {
-      transform: scale(2);
-    }
+  form {
+    transform: scale(2);
   }
+}
 
-  /* Desktops and laptops ----------- */
-  @media screen and (max-width : 1224px) {
-    form {
-      max-width: 422px;
-      max-height: 800px;
-    }
+/* Desktops and laptops ----------- */
+@media screen and (max-width : 1224px) {
+  form {
+    max-width: 422px;
+    max-height: 800px;
   }
+}
