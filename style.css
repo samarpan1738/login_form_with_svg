@@ -134,6 +134,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #eff3f4;
   position: relative;
   width: 100%;
@@ -142,20 +145,18 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-
   background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
 }
 
 form {
   position: absolute;
-  top: 50vh;
-  left: 50vw;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  align-self: center;
   display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 100%;
-  max-width: 600px;
-  max-height: 1000px;
+  max-width: 400px;
   background-color: #FFF;
   margin: 0;
   padding: 2.25em;
@@ -163,7 +164,6 @@ form {
   border: solid 1px #DDD;
   border-radius: .5em;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 form .svgContainer {
@@ -376,4 +376,56 @@ form .inputGroup2 #showPasswordToggle input:disabled~.indicator {
 
 form .inputGroup2 #showPasswordToggle input:disabled~.indicator:after {
   visibility: hidden;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  form {
+    max-width: 300px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+
+/**********
+  iPad 3
+  **********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
 }
